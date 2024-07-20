@@ -1,0 +1,80 @@
+@media only screen and (max-width: 800px) {
+  .home-page {
+    font-size: 3.5rem !important;
+    line-height: 3.3rem !important;
+    font-weight: 500 !important;
+  }
+  .home-page-footer {
+    margin-bottom: 4.5rem !important;
+  }
+
+  .home-page > div > span {
+    line-height: 65px !important;
+  }
+}
+
+.home-page-container {
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-page-header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 5.5rem;
+  font-weight: 500;
+  position: relative;
+  line-height: 80px;
+  letter-spacing: var(--heading-letter-spacing);
+  position: relative;
+}
+
+.home-page > div > p > span {
+  color: var(--section-color);
+}
+
+.home-page > div > span {
+  line-height: 7rem;
+}
+
+.home-page-footer {
+  width: 150px; /* Adjust the width to fit the new icon */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.home-page-footer a {
+  transition: transform 0.4s ease; /* Smooth transition */
+}
+
+.home-page-footer a:hover {
+  transform: scale(1.5); /* Slightly increase size on hover */
+}
+
+.highlighted-text {
+  width: 100%;
+  background: url('C:/React Aplications/personal-portfolio-1.2/src/background.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 20px 0; /* Adjust the padding as needed */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.highlighted-text > div,
+.highlighted-text > span {
+  display: block;
+  width: 100%;
+}

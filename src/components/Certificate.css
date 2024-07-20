@@ -1,0 +1,46 @@
+/* Certificate.css */
+.certificate {
+    width: 150px; /* Намаляване на ширината на изображението */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 2px; /* Заоблени краища */
+    overflow: hidden; /* Скрива частите извън контейнера */
+    text-align: center; /* Центриране на текста */
+  }
+  
+  .certificate:hover {
+    transform: scale(1.1); /* Анимация при hover */
+  }
+  
+  .certificate-img {
+    width: 100%;
+    height: auto; /* Запазва съотношението на изображението */
+  }
+  
+  .certificate-name {
+    margin-top: 10px;
+    font-size: 0.9rem; /* Намаляване на размера на шрифта */
+    text-align: center;
+  }
+  
+  /* Респонсив дизайн */
+  @media only screen and (max-width: 800px) {
+    .certificate {
+      width: 120px; /* По-малка ширина на изображението на малки екрани */
+    }
+  
+    .certificate-name {
+      font-size: 0.8rem; /* По-малък размер на шрифта на малки екрани */
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .certificate {
+      width: 100px; /* Още по-малка ширина на изображението на много малки екрани */
+    }
+  
+    .certificate-name {
+      font-size: 0.7rem; /* Още по-малък размер на шрифта на много малки екрани */
+    }
+  }
+  

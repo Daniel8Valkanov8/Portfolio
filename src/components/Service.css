@@ -1,0 +1,102 @@
+/* General styling */
+.skill-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрира по хоризонтала */
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  .skill-container-service{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрира по хоризонтала */
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  .skill-header-service{
+    font-size: var(--section-heading-size);
+    margin-bottom: 20px;
+    letter-spacing: var(--heading-letter-spacing);
+    text-align: center; /* Центрира текста по хоризонтала */
+  }
+  
+  .skill-header-service> span {
+    color: var(--section-color);
+  }
+  
+  /* Styling for skill-content and skill-left */
+  .skill-content-service{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрира по хоризонтала */
+    width: 100%;
+  }
+  
+  .skill-left-service{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрира по хоризонтала */
+    width: 100%;
+  }
+  
+  /* Styling for divskills */
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 450px; /* Reduced max-width to make sections more compact */
+    margin: 10px;
+    padding: 15px; /* Reduced padding for compactness */
+    border: 2px solid rgb(129, 184, 183);
+    border-radius: 20px; /* Adjusted border radius */
+    text-align: center;
+  }
+  
+  .services h1 {
+    font-size: 2rem; /* Increase heading size */
+    margin-bottom: 20px;
+  }
+  
+  .services p {
+    font-size: 1.5rem; /* Increase paragraph size */
+    margin: 5px 0; /* Adjust margin for better spacing */
+  }
+  
+  /* Responsive styling */
+  @media only screen and (max-width: 800px) {
+    .skill-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .skill-left,
+    .skill-images {
+      width: 100%;
+      align-items: center;
+    }
+  
+    .skill-images {
+      margin-top: 20px;
+      flex-direction: row;
+      flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+    }
+  
+    .skill-img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .skill-img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  

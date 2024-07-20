@@ -1,0 +1,119 @@
+/* General styling */
+.skill-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.skill-header {
+  font-size: var(--section-heading-size);
+  margin-bottom: 20px;
+  letter-spacing: var(--heading-letter-spacing);
+  text-align: left;
+}
+
+.skill-header > span {
+  color: var(--section-color);
+}
+
+.skill-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.skill-left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Reduced space between skill divs */
+}
+
+.skill-images {
+  width: 35%;
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  align-items: center;
+  gap: 20px; /* Space between images */
+  position: relative; /* For the animation effect */
+}
+
+/* New animation for images */
+@keyframes moveImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); /* Moves up */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.skill-img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0.9;
+  animation: moveImage 3s infinite; /* Apply animation */
+}
+
+.skill-img:hover {
+  transform: scale(1.3);
+  opacity: 1;
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 800px) {
+  .skill-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-left,
+  .skill-images {
+    width: 100%;
+    align-items: center;
+  }
+
+  .skill-images {
+    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+  }
+
+  .skill-img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Styling for divskills */
+.divskills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 450px; /* Reduced max-width to make sections more compact */
+  margin: 10px;
+  padding: 15px; /* Reduced padding for compactness */
+  border: 2px solid white;
+  border-radius: 20px; /* Adjusted border radius */
+  text-align: center;
+}
+
+.divskills h1 {
+  font-size: 1.5rem; /* Increase heading size */
+  margin-bottom: 10px;
+}
+
+.divskills p {
+  font-size: 1.1rem; /* Increase paragraph size */
+  margin: 5px 0; /* Adjust margin for better spacing */
+}
