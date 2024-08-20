@@ -8,6 +8,17 @@ const ProjectPage = () => {
         <span>Pro</span>jects
       </div>
       <div className="project-list">
+      <div className="project">
+          <p>Course Project, defended in SoftUni</p>
+          <p>Travel Agency Security Version</p>
+          Authorisation and authentication. REST. Contains USER and ADMIN roles. 
+          <p>
+            <span>2024</span>
+            <a href="https://github.com/Daniel8Valkanov8/Course-project-for-retake">
+              Tap to view
+            </a>
+          </p>
+        </div>
         <div className="project">
           <p>Part of my thesis</p>
           <p>TR-Viewer</p>
@@ -18,6 +29,7 @@ const ProjectPage = () => {
             </a>
           </p>
         </div>
+
         <div className="project">
           <p>Course project</p>
           <p>Travel Agency Rest Api</p>

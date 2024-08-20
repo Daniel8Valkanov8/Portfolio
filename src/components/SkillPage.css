@@ -45,13 +45,13 @@
 /* New animation for images */
 @keyframes moveImage {
   0% {
-    transform: translateY(0);
+    transform: translateY(50);
   }
   50% {
     transform: translateY(-15px); /* Moves up */
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(40);
   }
 }
 

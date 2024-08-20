@@ -7,31 +7,59 @@ import HomePage from "./components/HomePage";
 import ProjectPage from "./components/ProjectPage";
 import SkillPage from "./components/SkillPage";
 import EducationPage from "./components/EducationPage";
-import Services from "./components/Services"
+import Services from "./components/Services";
+import { motion } from 'framer-motion';
+
 export default function App() {
   const [showBackToTopBtn, setShowBackToTopBtn] = useState(false);
-
-  const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 500) {
-      setShowBackToTopBtn(true);
-    } else if (scrolled <= 500) {
-      setShowBackToTopBtn(false);
-    }
-  };
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [currentEmoji, setCurrentEmoji] = useState("🌐");
+  const emojiArray = ["🌐", "🧪"];
 
   useEffect(() => {
+    const toggleVisible = () => {
+      const scrolled = document.documentElement.scrollTop;
+      setShowBackToTopBtn(scrolled > 500);
+    };
     window.addEventListener("scroll", toggleVisible);
+
+    const handleMouseMove = (event) => {
+      setCursorPosition({ x: event.clientX, y: event.clientY });
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+
+    const interval = setInterval(() => {
+      setCurrentEmoji((prevEmoji) =>
+        prevEmoji === emojiArray[0] ? emojiArray[1] : emojiArray[0]
+      );
+    }, 10000);
+
+    return () => {
+      window.removeEventListener("scroll", toggleVisible);
+      window.removeEventListener("mousemove", handleMouseMove);
+      clearInterval(interval);
+    };
   }, []);
 
-  function scrollToTop() {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  }
+  };
+
   return (
     <>
+      <motion.p
+        className="mouse-emoji"
+        
+        style={{ left: cursorPosition.x, top: cursorPosition.y }}
+        animate={{ x: cursorPosition.x, y: cursorPosition.y }}
+        transition={{ type: "spring", stiffness: 300, damping: 30 }}
+      >
+        {currentEmoji}
+      </motion.p>
+
       <div className="app-section" id="home">
         <HomePage />
       </div>

@@ -10,26 +10,22 @@ const AboutPage = () => {
       <div className="about-info">
         <div className="about-left">
         
-        My main interests are in full-stack software engineering, 
-        but they don't end there. I am also interested in new technologies and AI🤖, 
-        various biological disciplines🧬, physics and astronomy, photography📷, psychology📖. 
-        One of my main goals is participating in the development of Java-based biological software.
+        I am a professional with a deep interest in full-stack software engineering, alongside a 
+        passion for emerging technologies and artificial intelligence. My academic background 
+        is in bioinformatics, and I am eager to bridge the gap between biology and technology. 
+        Currently, I am seeking opportunities in the IT sector, particularly as a Java Backend or 
+        Fullstack Developer, either in an internship or junior position. 
+        A key objective of mine is to
+         contribute to the development of 
+         Java-based software solutions for biological applications.
         </div>
         <div className="about-right">
+        
           <p>
-          Hello, my name is Daniel Valkanov. I am about to complete my bachelor's degree in
-          <span> Bioinformatics</span>.
+          I hold a Bachelor's degree in <span>Bioinformatics</span> and have spent the last 
+          three years honing my programming skills at <span>SoftUni</span>, 
           </p>
-          <p>
-          In the last three years,
-           I have specialized and enriched my programming 
-           knowledge at the  
-            <span> SoftUni </span>school.
-          </p>
-          <p>
-          With each passing day, my <span> knowledge </span> and <span>personal projects</span> grow.
-          I am currently studying the fundamentals of <span>Reactjs</span> and <span>Spring Framework</span> in depth.  
-          </p>
+          <p>where I successfully completed the <span> Java Developer</span> pathway followed by a <span>DevOps</span> module and ongoing studies in <span>ReactJS</span>. </p> 
         </div>
       </div>
     </div>

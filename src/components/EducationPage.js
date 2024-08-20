@@ -7,7 +7,9 @@ const pdfFiles = [
   { name: 'Java OOP', pdfPath: require('./certificates/Java OOP.pdf'), imgPath: require('./certificates/Java OOP.jpg') },
   { name: 'JS Front-End', pdfPath: require('./certificates/JS Front-End.pdf'), imgPath: require('./certificates/JS Front-End.jpg') },
   { name: 'MySQL', pdfPath: require('./certificates/MySQL.pdf'), imgPath: require('./certificates/MySQL.jpg') },
-  { name: 'Spring Fundamentals', pdfPath: require('./certificates/Spring Fundamentals.pdf'), imgPath: require('./certificates/Spring Fundamentals.jpg') }
+  { name: 'Spring Fundamentals', pdfPath: require('./certificates/Spring Fundamentals.pdf'), imgPath: require('./certificates/Spring Fundamentals.jpg') }, 
+  { name: 'Spring Advanced', pdfPath: require('./certificates/Spring Advanced.jpg'), imgPath: require('./certificates/Spring Advanced.jpg') }
+
 ];
 
 const EducationPage = () => {

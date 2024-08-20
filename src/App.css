@@ -46,3 +46,10 @@
 .btn-back-to-top > svg {
   font-size: 1.2rem;
 }
+.mouse-emoji {
+  position: fixed;
+  font-size: 3rem; /* Увеличава размера на емоджито */
+  pointer-events: none;
+  
+  
+}
