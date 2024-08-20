@@ -22,24 +22,25 @@ export default function App() {
       setShowBackToTopBtn(scrolled > 500);
     };
     window.addEventListener("scroll", toggleVisible);
-
+  
     const handleMouseMove = (event) => {
       setCursorPosition({ x: event.clientX, y: event.clientY });
     };
     window.addEventListener("mousemove", handleMouseMove);
-
+  
     const interval = setInterval(() => {
       setCurrentEmoji((prevEmoji) =>
         prevEmoji === emojiArray[0] ? emojiArray[1] : emojiArray[0]
       );
     }, 10000);
-
+  
     return () => {
       window.removeEventListener("scroll", toggleVisible);
       window.removeEventListener("mousemove", handleMouseMove);
       clearInterval(interval);
     };
-  }, []);
+  }, [emojiArray]); // Добавете `emojiArray` тук
+  ;
 
   const scrollToTop = () => {
     window.scrollTo({
