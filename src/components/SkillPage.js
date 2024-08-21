@@ -4,7 +4,9 @@ import javaImg from "../logos/java.png";
 import mysqlImg from "../logos/mysql.png";
 import reactImg from "../logos/react.png";
 import springImg from "../logos/spring.png";
-import github from "../logos/github.png"
+import github from "../logos/github.png";
+import git from "../logos/git.png";
+
 
 const SkillPage = () => {
   return (
@@ -43,6 +45,7 @@ const SkillPage = () => {
           <img src={reactImg} alt="React" className="skill-img" />
           <img src={springImg} alt="Spring" className="skill-img" />
           <img src={github} alt="Github" className="skill-img" />
+          <img src={git} alt="Git" className="skill-img" />
         </div>
       </div>
     </div>
