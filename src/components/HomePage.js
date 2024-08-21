@@ -17,7 +17,7 @@ const HomePage = () => {
       
       <div className="home-page">
         <div>
-          <span>Hey,</span>
+          <span>Hey, </span>
           <p>
             I am <span> Daniel Valkanov</span>,
           </p>
