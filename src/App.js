@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react"; // Add useMemo here
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import "./App.css";
 import AboutPage from "./components/AboutPage";
@@ -9,12 +9,12 @@ import SkillPage from "./components/SkillPage";
 import EducationPage from "./components/EducationPage";
 import Services from "./components/Services";
 import { motion } from 'framer-motion';
-
-export default function App() {
-  const [showBackToTopBtn, setShowBackToTopBtn] = useState(false);
+export default function App() { const [showBackToTopBtn, setShowBackToTopBtn] = useState(false);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [currentEmoji, setCurrentEmoji] = useState("🌐");
-  const emojiArray = ["🌐", "🧪"];
+
+  // Memoize emojiArray to prevent it from changing on every render
+  const emojiArray = useMemo(() => ["🌐", "🧪"], []);
 
   useEffect(() => {
     const toggleVisible = () => {
@@ -22,25 +22,24 @@ export default function App() {
       setShowBackToTopBtn(scrolled > 500);
     };
     window.addEventListener("scroll", toggleVisible);
-  
+
     const handleMouseMove = (event) => {
       setCursorPosition({ x: event.clientX, y: event.clientY });
     };
     window.addEventListener("mousemove", handleMouseMove);
-  
+
     const interval = setInterval(() => {
       setCurrentEmoji((prevEmoji) =>
         prevEmoji === emojiArray[0] ? emojiArray[1] : emojiArray[0]
       );
     }, 10000);
-  
+
     return () => {
       window.removeEventListener("scroll", toggleVisible);
       window.removeEventListener("mousemove", handleMouseMove);
       clearInterval(interval);
     };
-  }, [emojiArray]); // Добавете `emojiArray` тук
-  ;
+  }, [emojiArray]);
 
   const scrollToTop = () => {
     window.scrollTo({
