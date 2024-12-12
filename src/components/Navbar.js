@@ -75,8 +75,18 @@ const Navbar = () => {
           About
         </Link>
         <Link to="skills" spy={true} smooth={true} duration={500}>
-          Skills
+          Development
         </Link>
+
+        <Link
+  onClick={() => setIsMenuOpen(!isMenuOpen)}
+  to="bioinformatic"
+  spy={true}
+  smooth={true}
+  duration={500}
+>
+  Bio
+</Link>
         <Link to="projects" spy={true} smooth={true} duration={500}>
           Projects
         </Link>

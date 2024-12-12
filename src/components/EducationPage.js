@@ -22,6 +22,21 @@ const EducationPage = () => {
         </p>
       </div>
       <div className="education-list">
+
+
+      <div className="education">
+          <p>Аpplied molecular biology with bioinformatics - master degree</p>
+          <p>Plovdiv University "Paisii Hilendarski"</p>
+          <p>
+            <span>Sept 2024 - Jul 2025</span>
+            <a href="https://bio.uni-plovdiv.bg" target="_blank" rel="noopener noreferrer">
+              <LocationOnIcon />
+              Plovdiv, Bulgaria
+            </a>
+          </p>
+        </div>
+
+
         <div className="education">
           <p>Bioinformatics - bachelor degree</p>
           <p>Plovdiv University "Paisii Hilendarski"</p>
@@ -37,7 +52,7 @@ const EducationPage = () => {
           <p>Java Web Developer - vocational training certificate</p>
           <p>Software University</p>
           <p>
-            <span>Feb 2022 - Aug 2024</span>
+            <span>Feb 2022 - Dec 2024</span>
             <a href="https://softuni.bg/" target="_blank" rel="noopener noreferrer">
               <LocationOnIcon />
               Sofia, Bulgaria
