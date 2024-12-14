@@ -5,10 +5,12 @@ import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
 import HomePage from "./components/HomePage";
 import ProjectPage from "./components/ProjectPage";
-import SkillPage from "./components/SkillPage";
+import CodeSkills from "./components/SkillPage";
 import EducationPage from "./components/EducationPage";
 import Services from "./components/Services";
 import { motion } from 'framer-motion';
+import BioinformaticSkills from "./components/BioinformaticSkills";
+
 export default function App() { const [showBackToTopBtn, setShowBackToTopBtn] = useState(false);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [currentEmoji, setCurrentEmoji] = useState("🌐");
@@ -49,6 +51,7 @@ export default function App() { const [showBackToTopBtn, setShowBackToTopBtn] = 
   };
 
   return (
+    
     <>
       <motion.p
         className="mouse-emoji"
@@ -67,8 +70,13 @@ export default function App() { const [showBackToTopBtn, setShowBackToTopBtn] = 
         <AboutPage />
       </div>
       <div className="app-section" id="skills">
-        <SkillPage />
+        <CodeSkills />
       </div>
+
+      <div className="app-section" id="bioinformatic">
+        <BioinformaticSkills />
+      </div>
+
       <div className="app-section" id="projects">
         <ProjectPage />
       </div>

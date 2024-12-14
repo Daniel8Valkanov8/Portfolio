@@ -11,10 +11,12 @@ const Services = () => {
       <div className="skill-content-service">
         <div className="skill-left-service">
           <div className="services">
-            <h1>Custom Outsourced Projects</h1>
+            <h1> Fullstack App Development</h1>
             <p>I offer personalized project development services tailored to client needs, 
               whether frontend, backend, or full stack. 
-              My technical toolkit includes React, Java, and SQL.</p>
+              My technical toolkit includes Node Js - React, Java, and SQL.
+              Autumatisation, deployment and monitoring.
+              </p>
             
           </div>
           <div className="services">
