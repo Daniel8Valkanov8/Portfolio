@@ -119,6 +119,12 @@
   align-items: center;
   position: relative;
 }
+@media (min-width: 768px) {
+  .home-page-content {
+    flex-direction: row; /* Side-by-side layout for larger screens */
+    justify-content: space-between;
+  }
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
