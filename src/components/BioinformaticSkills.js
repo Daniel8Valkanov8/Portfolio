@@ -7,7 +7,7 @@ const BioinformaticSkills = () => {
   return (
     <div className="skill-container">
       <div className="skill-header">
-        <span>Bio</span>informatics and <span>Lab</span>
+        <span>Bio</span>info and <span>Lab</span>
       </div>
       
       <div className="skill-content">

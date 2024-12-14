@@ -6,7 +6,7 @@
   
   
   img {
-    user-drag: none;
+    
     -moz-user-drag: none;
     -webkit-user-drag: none;
     user-select: none;
@@ -85,14 +85,6 @@
     }
   }
   
-  /*@keyframes rotate {
-    0% {
-      transform: rotateX(0deg);
-    }
-    100% {
-      transform: rotateX(360deg);
-    }
-  }*/
   
   @keyframes rotate {
     from {
@@ -116,12 +108,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
-    max-height: 400px; /* Maintain a maximum height */
-    overflow: hidden; /* Prevent content overflow */
+    /* Maintain a maximum height */
+    /* Prevent content overflow */
     margin: auto;
     transform: rotateZ(-90deg); /* Ensure the DNA remains straight */
   }
+  @media (max-width: 768px) {
+    .dna-rotation {
+      overflow: hidden; /* Prevent content overflow only on smaller screens */
+    }
+  }
+  
   
   .dna {
     display: flex;
