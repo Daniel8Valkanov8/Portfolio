@@ -3,9 +3,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
-
-import "./HomePage.css";
 import Navbar from "./Navbar";
+import "./HomePage.css";
+import DNAAnimation from "./animation/DNAAnimation";
 
 const HomePage = () => {
   return (
@@ -14,16 +14,18 @@ const HomePage = () => {
         <Navbar />
       </div>
 
-      
-      <div className="home-page">
-        <div>
-          <span>Hey, </span>
-          <p>
-            I am <span> Daniel Valkanov</span>,
-          </p>
+      <div className="home-page-content">
+        <div className="home-page">
+          <div>
+            <span>Hey, </span>
+            <p>
+              I am <span> Daniel Valkanov</span>,
+            </p>
+          </div>
+          <span>Bioinformatic 🧬</span>
+          <span>and Java Developer 🖥️</span>
         </div>
-        <span>Bioinformatic 🧬</span>
-        <span>and Java Developer 🖥️</span>
+        <DNAAnimation /> {/* Добавяне на ДНК анимацията */}
       </div>
 
       <div className="home-page-footer">
@@ -52,9 +54,9 @@ const HomePage = () => {
           href="mailto:daniel8valkanov8@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-        ><EmailIcon />
+        >
+          <EmailIcon />
         </a>
-        
       </div>
     </div>
   );

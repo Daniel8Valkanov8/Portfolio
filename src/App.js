@@ -10,6 +10,7 @@ import EducationPage from "./components/EducationPage";
 import Services from "./components/Services";
 import { motion } from 'framer-motion';
 import BioinformaticSkills from "./components/BioinformaticSkills";
+
 export default function App() { const [showBackToTopBtn, setShowBackToTopBtn] = useState(false);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [currentEmoji, setCurrentEmoji] = useState("🌐");
@@ -50,6 +51,7 @@ export default function App() { const [showBackToTopBtn, setShowBackToTopBtn] = 
   };
 
   return (
+    
     <>
       <motion.p
         className="mouse-emoji"
